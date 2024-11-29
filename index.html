@@ -1,0 +1,400 @@
+<!DOCTYPE html> <!-- desenvolvido no dia 13/04/2022 -->
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Loja Virtual de Produtos Naturais</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./js.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__data">
+        <a href="#" class="nav__logo">
+          <i class="ri-quill-pen-line"></i> LEAF HEALTH
+        </a>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+        </div>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link">Home</a></li>
+
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Medicamentos <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-capsule-fill"></i> Drogas
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-first-aid-kit-fill"></i> Suplementos
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Bem-Estar <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-restaurant-fill"></i> Dieta
+                </a>
+              </li>
+
+              <li class="dropdown__subitem">
+                <div class="dropdown__link">
+                  <i class="ri-hand-heart-fill"></i> Saúde <i class="ri-add-line dropdown__add"></i>
+                </div>
+
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      <i class="ri-mental-health-fill"></i> Mental
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      <i class="ri-basketball-fill"></i> Exercícios
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      <i class="ri-group-2-fill"></i> Gravidez
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="nav__link">Verificar Sintomas</a></li>
+
+
+          <li><a href="#" class="nav__link">Encontrar Medicos</a></li>
+
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Mais <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-user-line"></i> Quem Somos
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-lock-line"></i> Serviços
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  <i class="ri-message-3-line"></i> Contatos
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <hr>
+
+  <!---->
+  <div class="div-slider">
+    <ul class="slides-front">
+      <input type="radio" name="radio-btn" id="img-1" checked="">
+      <li class="slide-container">
+        <div class="slide">
+          <img src="./LEAF HEALTH1.jpg">
+        </div>
+        <div class="nav">
+          <label for="img-3" class="prev">‹</label>
+          <label for="img-2" class="next">›</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-2">
+      <li class="slide-container">
+        <div class="slide">
+          <img src="./LEAF HEALTH2.jpg">
+        </div>
+        <div class="nav">
+          <label for="img-1" class="prev">‹</label>
+          <label for="img-3" class="next">›</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-3">
+      <li class="slide-container">
+        <div class="slide">
+          <img src="./LEAF HEALTH3.jpg">
+        </div>
+        <div class="nav">
+          <label for="img-2" class="prev">‹</label>
+          <label for="img-1" class="next">›</label>
+        </div>
+      </li>
+
+      <li class="nav-dots">
+        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      </li>
+    </ul>
+  </div>
+  <!---->
+
+  <h1 class="titulo">Remédios</h1>
+  <section class="banner-container">
+    <img class="banner-image" src="assets/images/banner.png" alt="">
+  </section>
+
+  <section class="promotion-header">
+    <span class="promotion-header--title">PROMOÇÃO</span>
+    <span>50 Produtos restantes</span>
+  </section>
+
+  <div class="line"></div>
+
+  <main class="product-page">
+    <div class="row">
+      <div class="product-container">
+        <div class="product">
+          <img src="./dipirona.png" alt="Dipirona 500mg">
+          <span>Dipirona 500mg</span>
+          <span>R$ <span class="price">7,50</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./Amoxicilina 500mg.webp" alt="Amoxicilina 500mg">
+          <span>Amoxicilina 500mg</span>
+          <span>R$ <span class="price">18,90</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./ibuprofeno.jpg" alt="Ibuprofeno 600mg">
+          <span>Ibuprofeno 600mg</span>
+          <span>R$ <span class="price">15,99</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./Paracetamol 750mg.webp" alt="Paracetamol 750mg">
+          <span>Paracetamol 750mg</span>
+          <span>R$ <span class="price">9,50</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./Cetirizina (antialérgico).webp" alt="Cetirizina">
+          <span>Cetirizina (antialérgico)</span>
+          <span>R$ <span class="price">19,90</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./omeprazol.jpg" alt="Omeprazol 20mg">
+          <span>Omeprazol 20mg</span>
+          <span>R$ <span class="price">22,90</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./clonazepam.jpg" alt="Clonazepam 2mg">
+          <span>Clonazepam 2mg</span>
+          <span>R$ <span class="price">29,99</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./vitamina-c-vitaceklitos-gotas-20-ml_22699.webp" alt="Cataflam Gotas">
+          <span>Cataflam Gotas</span>
+          <span>R$ <span class="price">27,50</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./azitromicina.webp" alt="Azitromicina 500mg">
+          <span>Azitromicina 500mg</span>
+          <span>R$ <span class="price">39,90</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <hr>
+  <h1 class="titulo">Suplementos</h1>
+  <section class="banner-container">
+    <img class="banner-image" src="assets/images/banner.png" alt="">
+  </section>
+
+  <section class="promotion-header">
+    <span class="promotion-header--title">PROMOÇÃO</span>
+    <span>30 Produtos restantes</span>
+  </section>
+
+  <div class="line"></div>
+
+  <main class="product-page">
+    <div class="row">
+      <div class="product-container">
+        <div class="product">
+          <img src="./whey-100-pure-sabor-baunilha-907g-235.jpg" alt="">
+          <span>Whey Protein - Sabor baunilha </span>
+          <span>R$ <span class="price">50,00</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./mockup--mega-120cps-0jaa66hr6m.webp" alt="">
+          <span>Ômega 3 - 120 cápsulas</span>
+          <span>R$ <span class="price">50,00</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./bcaa_2_1_1_2000mg_pote_60_capsulas_pro_healthy_351_1_fdc01c9ecc74bd4f5804d59c3c2148ce.webp" alt="">
+          <span>BCAA 2:1:1 - 200g</span>
+          <span>R$ <span class="price">69,90</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./Multivitamínico 60 cápsulas.webp" alt="">
+          <span>Multivitamínico 60 cápsulas</span>
+          <span>R$ <span class="price">39,90</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./Creatina - Performance máxima.webp" alt="">
+          <span>Creatina - Performance máxima</span>
+          <span>R$ <span class="price">74,90</span></span>
+          <button class="blue-button">Comprar</button>
+
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <img src="./Colágeno hidrolisado - Pele firme.jpg" alt="">
+          <span>Colágeno hidrolisado - Pele firme</span>
+          <span>R$ <span class="price">49,90</span></span>
+          <button class="blue-button">Comprar</button>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+  <div class="banners">
+
+    <div class="caixabanner"><img src="./banner1.jpg" alt=""></div>
+    <div class="caixabanner"><img src="./banner2.jpg" alt=""></div>
+    <div class="caixabanner"><img src="./banner3.jpg" alt=""></div>
+
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-top--left">
+        <a href="#">Contato</a>
+        <a href="#">Termos de Serviço</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Cancelamento, Troca e Reembolso</a>
+      </div>
+      <div class="footer-top--right">
+        <span>News Letter</span>
+        <div class="footer-news-letter">
+          <input class="footer-input" type="email" placeholder="Digite o seu melhor e-mail">
+          <button class="footer-button" type="button">Inscrever</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom--left">
+        <a href="#"><img class="footer-image" src="assets/images/instagram.png" alt=""></a>
+        <a href="#"><img class="footer-image" src="assets/images/facebook.png" alt=""></a>
+      </div>
+      <div>
+        <p>Site desenvolvido por <a href="https://github.com/pablouweb" target="_blank">Pablo Alexandre.</a></a></p>
+      </div>
+      <div class="footer-bottom--right">
+        <img class="footer-image" src="assets/images/mastercard.png" alt="">
+        <img class="footer-image" src="assets/images/paypal.png" alt="">
+        <img class="footer-image" src="assets/images/visa.png" alt="">
+      </div>
+    </div>
+
+
+  </footer>
+  </div>
+</body>
+
+</html>
